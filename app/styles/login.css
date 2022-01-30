@@ -1,0 +1,83 @@
+.login-page {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.left-panel {
+    width: 50%;
+    min-width: 500px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content {
+    width: 300px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content h1 {
+    text-align: center;
+    color: dodgerblue;
+
+    margin: 0;
+}
+
+.left-panel form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 0px
+}
+
+.left-panel form label {
+    padding: 10px 0px 4px 5px;
+}
+
+.left-panel form input {
+    padding: 10px;
+    border-radius: 8px;
+
+    border: 1px solid #00000023;
+}
+
+.left-panel form button {
+    padding: 8px;
+    width: 47%;
+    margin: 10px 0px;
+    
+    border-radius: 8px;
+    border: 1px solid #00000023;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    background-color: #f3f3f3f3;
+    color: #232323;
+}
+
+.sign-in {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.right-panel {
+    width: 50%;
+    height: 100vh;
+
+    background-color: dodgerblue;
+}
