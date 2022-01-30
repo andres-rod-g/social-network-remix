@@ -17,18 +17,25 @@ export const links: LinksFunction = () => {
 export default function MainProfile() {
     return (
         <div className="profile-page-container">
-            <div className="profile-container">
+            <div className="card profile-container">
                 <div className="profile-info">
                     <img/>
                     <h1>Josefino</h1>
                 </div>
-                <button>
+                <button className="option-button">
                     <FontAwesomeIcon icon={faEllipsisV}/>
                 </button>
             </div>
-            <div className="bio-container">
-                BIOGRAFIA
-                EDITAR BIOGRAFIA
+            <div className="bio-container card">
+                <div className="bio-header">
+                    <h2>Bio</h2>
+                    <button className="default-icon option-button">
+                        <FontAwesomeIcon icon={faEllipsisV}/>
+                    </button>
+                </div>
+                <div className='bio-body'>
+                    <p>This from here is a bio.</p>
+                </div>
             </div>
         </div>
     )

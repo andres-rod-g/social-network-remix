@@ -1,0 +1,35 @@
+html {
+    background-color: #f3f3f3;
+    padding-top: 90px;
+    padding-left: 70px;
+}
+
+.friend-page-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.friend-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px 0px;
+
+    border-radius: 16px;
+    background-color: whitesmoke;
+}
+.profile-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-information h2 {
+    margin: 0;
+    padding: 0;
+}
