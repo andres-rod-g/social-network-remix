@@ -4,10 +4,9 @@ import { LinksFunction } from 'remix';
 
 import stylesUrl from '~/styles/index.css'
 
-import NavBar from '~/components/NavBar';
 import Post from '~/components/Post';
-import TopBar from '~/components/TopBar';
-import LeftBar from '~/components/LeftBar';
+import TopBar from '~/components/nav/TopBar';
+import LeftBar from '~/components/nav/LeftBar';
 
 export const links: LinksFunction = () => {
   return [
@@ -18,6 +17,7 @@ export const links: LinksFunction = () => {
   ]
 }
 
+
 export default function Index() {
   const [sectionIndex, setSctionIndex] = useState(0)
   const [cookies, setCookies] = useCookies([''])
@@ -27,12 +27,15 @@ export default function Index() {
   });
   
   return (
-    <div className='main-page'>
+    <div className='page-container'>
       <LeftBar/>
       <TopBar/>
-      <div className='page-content'>
-        <Post/>
-      </div>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </div>
   );
 }

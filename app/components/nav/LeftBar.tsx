@@ -1,19 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserFriends, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
 
-import { useNavigate } from 'remix';
+import { useNavigate, Link } from 'remix';
 
 export default function LeftBar () {
     const navigate = useNavigate()
 
     return(
         <div className='left-toolbar'>
-            <div className='left-icon'>
+            <Link to='/friends' className='left-icon'>
                 <FontAwesomeIcon onClick={() => navigate('/friends')} icon={faUserFriends}/>
-                </div> 
-                <div className='left-icon'>
-                <FontAwesomeIcon icon={faCommentAlt}/>
-            </div>
+            </Link> 
+            <Link to='/messages' className='left-icon'>
+                <FontAwesomeIcon onClick={() => navigate('/messages')} icon={faCommentAlt}/>
+            </Link>
       </div>
     )
 }

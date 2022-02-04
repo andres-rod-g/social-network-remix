@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlug, faBell, faUserFriends, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'remix';
+import { Link } from 'react-router-dom';
 
 export default function TopBar () {
     const navigate = useNavigate()
 
     return (
         <div className='default-icon top-toolbar'>
-            <FontAwesomeIcon onClick={() => navigate('/')} style={{transform: 'rotate(90deg)', fontSize: '30px', padding: '0px 20px', cursor: 'pointer'}} icon={faPlug}/>
+            <Link to='/'><FontAwesomeIcon onClick={() => navigate('/')} style={{transform: 'rotate(90deg)', fontSize: '30px', padding: '0px 20px', cursor: 'pointer'}} icon={faPlug}/></Link>
             <input className='search-bar' placeholder='Search'/>
             <div className='right-utilities'>
                 <div className='default-icon notification-container'>

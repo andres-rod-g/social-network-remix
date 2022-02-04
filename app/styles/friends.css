@@ -1,23 +1,9 @@
-html {
-    background-color: #f3f3f3;
-    padding-top: 90px;
-    padding-left: 70px;
-}
-
-.friend-page-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-
-}
-
 .friend-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 15px;
+    padding: 10px;
     margin: 10px 0px;
 
     border-radius: 16px;
@@ -29,7 +15,29 @@ html {
     align-items: center;
 }
 
+.profile-information img {
+    width: 60px;
+    height: 60px;
+
+    margin-right: 10px;
+
+    border-radius: 100%;
+    border: 1px solid #00000017;
+}
+
 .profile-information h2 {
     margin: 0;
     padding: 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid #00000017;
+    background-color: white;
+    border-radius: 100%;
 }

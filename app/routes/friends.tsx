@@ -6,9 +6,9 @@ import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
 import stylesUrlIndex from "~/styles/profile/index.css";
 import stylesUrl from "~/styles/friends.css";
 
-import LeftBar from "~/components/LeftBar";
-import TopBar from "~/components/TopBar";
-import FriendCard from "~/components/FriendCard";
+import LeftBar from "~/components/nav/LeftBar";
+import TopBar from "~/components/nav/TopBar";
+import FriendCard from "~/components/friends/FriendCard";
 
 export const links: LinksFunction = () => {
     return [
@@ -25,7 +25,7 @@ export const links: LinksFunction = () => {
 
 export default function Friends() {
     return (
-        <div className="friend-page-container">
+        <div className="page-container">
             <LeftBar/>
             <TopBar/>
             <div className="card">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
-import { LinksFunction } from 'remix';
+import { LinksFunction, ActionFunction } from 'remix';
 
 import stylesUrl from '~/styles/login.css'
 
@@ -11,6 +11,10 @@ export const links: LinksFunction = () => {
       href: stylesUrl
     }
   ]
+}
+
+export const action: ActionFunction = () => {
+    console.log('Hola')
 }
 
 export default function Index() {
@@ -26,7 +30,7 @@ export default function Index() {
         <div className='left-panel'>
             <div className='login-content'>
                 <h1>Connekt</h1>
-                    <form>
+                    <form method='post'>
                         <label htmlFor='email'>Email</label>
                         <input name='email' placeholder='andrew@gmail.com'></input>
                         <label htmlFor='password'>Password</label>
